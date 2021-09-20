@@ -1,0 +1,18 @@
+//Responsive Breakpoints
+@mixin tablet1 {
+  @media (min-width: #{$tablet1}) {
+    @content;
+  }
+}
+
+@mixin tablet2 {
+  @media (min-width: #{$tablet2}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

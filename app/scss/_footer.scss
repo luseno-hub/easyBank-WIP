@@ -1,0 +1,65 @@
+.footer {
+  background-color: $darkBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+
+  &__brand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 150px;
+      height: auto;
+    }
+
+    > div {
+      margin: 2rem 0;
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      > img {
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+
+  &__company,
+  &__business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    > a {
+      color: $lightGrayishBlue;
+      text-decoration: none;
+    }
+
+    & :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > a {
+      margin: 2rem 0;
+    }
+
+    > p {
+      color: $grayishBlue;
+    }
+  }
+}

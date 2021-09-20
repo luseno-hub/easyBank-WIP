@@ -1,0 +1,83 @@
+.articles {
+  background: $veryLightGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10%;
+
+  > h2 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: $darkBlue;
+  }
+
+  &__blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper {
+    border-radius: 10px;
+    background: $white;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__img {
+    min-height: 250px;
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    margin: 0;
+
+    &--1 {
+      background: url(../../images/image-currency.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &--2 {
+      background: url(../../images/image-restaurant.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &--3 {
+      background: url(../../images/image-plane.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &--4 {
+      background: url(../../images/image-confetti.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__content {
+    padding: 10%;
+
+    > p.articles__author {
+      font-size: 0.75rem;
+      margin: 0;
+      color: $grayishBlue;
+    }
+
+    > h5 {
+      color: $darkBlue;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 1rem 0;
+    }
+
+    > p.articles__teaser {
+      font-size: 1rem;
+      color: $grayishBlue;
+      margin: 0;
+    }
+  }
+}
